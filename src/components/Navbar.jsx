@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ toggleDarkMode, darkMode }) => {
   return (
     <nav className="navbar">
       <h1>Portfolio</h1>
@@ -11,6 +11,9 @@ const Navbar = () => {
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button onClick={toggleDarkMode} className="dark-mode-toggle">
+        {darkMode ? 'Light Mode' : 'Dark Mode'}
+      </button>
     </nav>
   );
 };
