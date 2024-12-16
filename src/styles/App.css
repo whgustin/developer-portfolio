@@ -1,3 +1,10 @@
+@import './Navbar.css';
+@import './Home.css';
+@import './Projects.css';
+@import './About.css';
+@import './Contact.css';
+@import './Footer.css';
+
 .App {
   text-align: center;
 }
